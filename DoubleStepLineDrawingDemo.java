@@ -19,7 +19,15 @@ License along with this program; if not, write to
 the Free Software Foundation, Inc., 51 Franklin Street, 
 Fifth Floor, Boston, MA  02110-1301, USA. 
 */
-
+/**
+ * 25/OCT/2014
+ * Hengxiu Gao:
+ * 
+ * Fixed some bug in the previous version, which used a wrong algorithm in function xslopeMoreThanHalf and 
+ * yslopeMoreThanHalf when choosing pattern 3 and 4, the right condition should be if(D >= (2 * dX)) and
+ * if(D >= (2 * dY) && D <(2 * dX)), respectively. 
+ * 
+ */
 /**
  * Stephen Niles:
  * This demo is modified from the original CGDemo downloaded from www.utdallas.edu/~kzhang/BookCG/CGDemo.zip
@@ -34,6 +42,9 @@ Fifth Floor, Boston, MA  02110-1301, USA.
  * same as the source code that was downloaded for the first problem.
  */
 
+/*
+	
+*/
 import java.awt.BorderLayout;
 import java.awt.Canvas;
 import java.awt.Color;
